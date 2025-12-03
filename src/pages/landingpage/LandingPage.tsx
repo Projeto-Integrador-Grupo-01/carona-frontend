@@ -2,6 +2,7 @@
 import SobreEquipe from "../../components/equipe/SobreEquipe";
 import Banner from "../../components/banner/Banner";
 import Navbar from "../../components/navbar/Navbar";
+import BenefitsSection from "../../components/beneficios/BenefitsSection";
 
 function LandingPage() {
 
@@ -64,7 +65,7 @@ function LandingPage() {
                 </div>
             </div> */}
 
-
+            <BenefitsSection />
 
             <SobreEquipe />
 

@@ -83,7 +83,7 @@ function CardViagem({ viagem }: CardViagensProps) {
 
                 <Link
                     to={`/viagem/${viagem.id}`}
-                    className="bg-gray-900 text-white hover:bg-gray-700 transition cursor-pointer px-4 py-2 rounded-lg"
+                    className="bg-lime-950 text-white hover:bg-amber-800 transition cursor-pointer px-4 py-2 rounded-lg"
                 >
                     Mais detalhes →
                 </Link>

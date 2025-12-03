@@ -10,7 +10,6 @@ type TeamMember = {
     description: ReactNode;
     id: number;
     name: string;
-    role: string;
     linkedin: string;
     photo: string;
 };
@@ -19,7 +18,6 @@ const teamMembers: TeamMember[] = [
     {
         id: 1,
         name: "Aline Romanini",
-        role: "Desenvolvedora",
         linkedin: "https://www.linkedin.com/m/in/aline-romanini/",
         photo: alineImg,
         description: "Na TechSisters, lideramos juntas: mulheres impulsionando propósito, inovação e colaboração.",
@@ -27,7 +25,6 @@ const teamMembers: TeamMember[] = [
     {
         id: 2,
         name: "Cintia Dourado",
-        role: "Desenvolvedora",
         linkedin: "https://www.linkedin.com/in/cintia-douradom/",
         photo: cintiaImg,
         description: "Na TechSisters, sigo guiada pelo equilíbrio entre sensibilidade e estratégia, movida pelos sonhos que me norteiam.",
@@ -35,7 +32,6 @@ const teamMembers: TeamMember[] = [
     {
         id: 3,
         name: "Nicolly Jesus",
-        role: "Scrum Master",
         linkedin: "https://www.linkedin.com/m/in/nicolly-jesus/",
         photo: nicollyImg,
         description: "Quando mulheres lideram, o caminho é mais seguro, colaborativo e cheio de propósito — GoTogether. ",
@@ -43,7 +39,6 @@ const teamMembers: TeamMember[] = [
     {
         id: 4,
         name: "Rafaela Lemes",
-        role: "Tester",
         linkedin: "https://www.linkedin.com/in/rafamorais/",
         photo: rafaelaImg,
         description: "Na Tech Sisters mulheres aceleram ideias, conectam pessoas e transformam o futuro da tecnologia.",
@@ -51,7 +46,6 @@ const teamMembers: TeamMember[] = [
     {
         id: 5,
         name: "Queren Alves",
-        role: "Desenvolvedora",
         linkedin: "https://www.linkedin.com/in/querenhalves/",
         photo: querenImg,
         description: "------",
@@ -97,10 +91,6 @@ const SobreEquipe: React.FC = () => {
                                 >
                                     {member.name}
                                 </a>
-
-                                <p className="mt-1 text-sm font-medium text-[#c97240]">
-                                    {member.role}
-                                </p>
 
 
                                 <p className="mt-3 text-sm text-gray-600">
