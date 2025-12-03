@@ -1,6 +1,6 @@
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react"
 import type Usuario from "../../models/Usuario";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { cadastrarUsuario } from "../../services/Service";
 import { ClipLoader } from "react-spinners";
 import { ToastAlerta } from "../../utils/ToastAlerta";
@@ -62,8 +62,29 @@ function Cadastro() {
     setIsLoading(false);
   }
 
+  const isActive = (path: string) =>
+    location.pathname === path
+      ? "text-yellow-700 relative px-3 py-2 after:content-[''] after:absolute after:inset-0 after:bg-yellow-700/10 after:rounded-xl"
+      : "text-gray-700 px-3 py-2 ";
+
   return (
     <>
+      <div className="w-full bg-white border-gray-200 shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-gray-800">
+          <Link to="/" className="text-2xl font-semibold flex justify-center gap-2 text-blue-950" title="GoTogether">
+            <div className="flex flex-col">
+              <img className="h-14 w-14 self-center" src="https://i.imgur.com/oZkNh1Y.png" alt="GoTogether Logo" />
+              <div>
+                <span className="flex justify-center items-center text-blue-950">GoTogether</span>
+              </div>
+            </div>
+          </Link>
+          <div className="flex gap-8">
+            <Link to="/login" className={`hover:text-yellow-700 transition ${isActive("/login")}`} title="Entrar">Entrar</Link>
+            <Link to='/cadastro' className={`hover:text-yellow-700 transition ${isActive("/cadastro")}`} title="Cadastre-se">Cadastre-se</Link>
+          </div>
+        </div>
+      </div>
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="bg-white w-full max-w-lg p-8 rounded-xl shadow-lg">
 
@@ -167,7 +188,6 @@ function Cadastro() {
                 {isLoading ? <ClipLoader color="#ffffff" size={24} /> : <span>Cadastrar</span>}
               </button>
             </div>
-
           </form>
         </div>
       </div>
