@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import ModalViagem from "../../components/viagem/modalviagem/ModalViagem"
+import SobreEquipe from "../../components/equipe/SobreEquipe";
 
 function LandingPage() {
 
@@ -53,6 +54,10 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
+
+            <SobreEquipe />
+
+
         </>
     )
 }
