@@ -50,10 +50,10 @@ function ViagemDetalhe() {
             {viagem && (
                 <article className="max-w-3xl bg-white shadow-sm rounded-2xl p-8 mb-16
                         border border-gray-200">
-                    <h1 className="text-4xl font-extrabold text-yellow leading-tight mb-6">
+                    <h1 className="text-4xl font-extrabold text-lime-950 leading-tight mb-6">
                         Partida: {viagem.partida}
                     </h1>
-                    <h1 className="text-4xl font-extrabold text-slate-900 leading-tight mb-6">
+                    <h1 className="text-4xl font-extrabold text-lime-950 leading-tight mb-6">
                         Destino: {viagem.destino}
                     </h1>
                     <div className="flex items-center gap-4 mb-8">
@@ -63,10 +63,10 @@ function ViagemDetalhe() {
                             className="h-14 w-14 rounded-full object-cover"
                         />
                         <div className="flex flex-col">
-                            <span className="text-lg font-semibold text-slate-800">
+                            <span className="text-lg font-semibold text-lime-950">
                                 {viagem.usuario?.nome}
                             </span>
-                            <span className="text-sm text-slate-500">
+                            <span className="text-sm text-lime-950">
                                 {new Intl.DateTimeFormat("pt-BR", {
                                     dateStyle: "long",
                                     timeStyle: "short"
@@ -81,19 +81,19 @@ function ViagemDetalhe() {
                     >
                         {viagem.veiculo?.modelo}
                     </span>
-                    <div className="prose prose-lg max-w-none text-slate-800 leading-relaxed">
+                    <div className="prose prose-lg max-w-none text-lime-950 leading-relaxed">
                         {viagem.partida}
                     </div>
                 </article>
             )}
 
             <div className="max-w-3xl w-full">
-                <h2 className="text-xl font-bold text-slate-800 mb-4">
+                <h2 className="text-xl font-bold text-lime-950 mb-4">
                     Viagens Desse Motorista
                 </h2>
 
                 {relacionados.length === 0 && (
-                    <p className="text-gray-500">Nenhuma viagem encontrada.</p>
+                    <p className="text-lime-950">Nenhuma viagem encontrada.</p>
                 )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -103,8 +103,8 @@ function ViagemDetalhe() {
                             to={`/viagem/${post.id}`}
                             className="block bg-white shadow rounded-lg p-4 hover:shadow-lg transition"
                         >
-                            <h3 className="font-semibold text-slate-800 mb-4">Partida: {post.partida}</h3>
-                            <h3 className="font-semibold text-slate-800 mb-4">Destino: {post.destino}</h3>
+                            <h3 className="font-semibold text-lime-950 mb-4">Partida: {post.partida}</h3>
+                            <h3 className="font-semibold text-lime-950 mb-4">Destino: {post.destino}</h3>
                             <span className="text-sm bg-yellow-100 
                             text-orange-700 font-semibold px-3 py-1 rounded-full">
                                 {post.usuario?.nome}
