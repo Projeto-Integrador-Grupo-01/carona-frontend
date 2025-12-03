@@ -14,7 +14,7 @@ function Home() {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('https://i.imgur.com/9XV8jhE.jpeg')"
+                        backgroundImage: "url('https://imgur.com/hsWhayt.png')"
                     }}
                 >
                     <div className="absolute inset-0 bg-black/60"></div>
@@ -35,7 +35,7 @@ function Home() {
 
             <div className="bg-gray-50 min-h-screen py-10">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h1 className="text-3xl font-semibold text-blue-950 mb-1">
+                    <h1 className="text-3xl font-semibold text-[#264117] mb-1">
                         Explore novas viagens
                     </h1>
                 </div>

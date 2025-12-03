@@ -69,26 +69,11 @@ function Cadastro() {
 
   return (
     <>
-      <div className="w-full bg-white border-gray-200 shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-gray-800">
-          <Link to="/" className="text-2xl font-semibold flex justify-center gap-2 text-blue-950" title="GoTogether">
-            <div className="flex flex-col">
-              <img className="h-14 w-14 self-center" src="https://i.imgur.com/oZkNh1Y.png" alt="GoTogether Logo" />
-              <div>
-                <span className="flex justify-center items-center text-blue-950">GoTogether</span>
-              </div>
-            </div>
-          </Link>
-          <div className="flex gap-8">
-            <Link to="/login" className={`hover:text-yellow-700 transition ${isActive("/login")}`} title="Entrar">Entrar</Link>
-            <Link to='/cadastro' className={`hover:text-yellow-700 transition ${isActive("/cadastro")}`} title="Cadastre-se">Cadastre-se</Link>
-          </div>
-        </div>
-      </div>
+
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="bg-white w-full max-w-lg p-8 rounded-xl shadow-lg">
 
-          <h2 className="text-center text-2xl font-bold text-gray-800 mb-2">
+          <h2 className="text-center text-2xl font-bold text-[#264117]">
             Criar Conta
           </h2>
           <p className="text-center text-sm text-gray-500 mb-6">
@@ -98,7 +83,7 @@ function Cadastro() {
           <form className="flex flex-col gap-4" onSubmit={cadastrarNovoUsuario}>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="nome" className="text-sm text-gray-700">
+              <label htmlFor="nome" className="text-sm text-[#264117]">
                 Nome
               </label>
               <input
@@ -113,7 +98,7 @@ function Cadastro() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="usuario" className="text-sm text-gray-700">
+              <label htmlFor="usuario" className="text-sm text-[#264117]">
                 E-mail
               </label>
               <input
@@ -128,7 +113,7 @@ function Cadastro() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="foto" className="text-sm text-gray-700">
+              <label htmlFor="foto" className="text-sm text-[#264117]">
                 URL da sua foto
               </label>
               <input
@@ -143,7 +128,7 @@ function Cadastro() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="senha" className="text-sm text-gray-700">
+              <label htmlFor="senha" className="text-sm text-[#264117]">
                 Senha
               </label>
               <input
@@ -158,7 +143,7 @@ function Cadastro() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label htmlFor="confirmarSenha" className="text-sm text-gray-700">
+              <label htmlFor="confirmarSenha" className="text-sm text-[#264117]">
                 Confirmar Senha
               </label>
               <input
@@ -176,14 +161,14 @@ function Cadastro() {
               <button
                 type="reset"
                 onClick={retornar}
-                className="w-1/2 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition cursor-pointer"
+                className="w-1/2 py-2 border border-gray-300 rounded-md text-[#264117] hover:bg-gray-100 transition cursor-pointer"
               >
                 Cancelar
               </button>
 
               <button
                 type="submit"
-                className="w-1/2 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-md transition flex justify-center items-center cursor-pointer"
+                className="w-1/2 py-2 bg-[#264117] hover:bg-yellow-700 text-white rounded-md transition flex justify-center items-center cursor-pointer"
               >
                 {isLoading ? <ClipLoader color="#ffffff" size={24} /> : <span>Cadastrar</span>}
               </button>

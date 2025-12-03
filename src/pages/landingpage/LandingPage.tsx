@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom"
-import ModalViagem from "../../components/viagem/modalviagem/ModalViagem"
+
 import SobreEquipe from "../../components/equipe/SobreEquipe";
+import Banner from "../../components/banner/Banner";
+import Navbar from "../../components/navbar/Navbar";
 
 function LandingPage() {
 
@@ -13,7 +14,10 @@ function LandingPage() {
 
     return (
         <>
-            <div className="w-full bg-white border-gray-200 shadow-sm sticky top-0 z-50">
+
+
+
+            {/* <div className="w-full bg-white border-gray-200 shadow-sm sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-gray-800">
                     <Link to="/" className="text-2xl font-semibold flex justify-center gap-2 text-blue-950" title="GoTogether">
                         <div className="flex flex-col">
@@ -28,8 +32,13 @@ function LandingPage() {
                         <Link to='/cadastro' className={`hover:text-yellow-700 transition ${isActive("/cadastro")}`} title="Cadastre-se">Cadastre-se</Link>
                     </div>
                 </div>
-            </div>
-            <div className="relative w-full min-h-screen flex items-center justify-center">
+            </div> */}
+
+            <Banner />
+
+
+
+            {/* <div className="relative w-full min-h-screen flex items-center justify-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -53,7 +62,9 @@ function LandingPage() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+
 
             <SobreEquipe />
 
