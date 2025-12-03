@@ -38,7 +38,7 @@ function FilterVeiculos({ onFiltrar }: FilterVeiculosProps) {
     return (
         <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm
                         hover:shadow-xl transition-all duration-300">
-            <h3 className="font-semibold text-lg mb-4 text-blue-950">Filtrar por Veiculo</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#264117]">Filtrar por Veiculo</h3>
 
             {isLoading && (
                 <div className="flex justify-center py-4">
@@ -51,18 +51,18 @@ function FilterVeiculos({ onFiltrar }: FilterVeiculosProps) {
                     <button
                         onClick={() => onFiltrar(null)}
                         className={`w-full text-left block px-4 py-2 rounded-lg text-sm border border-gray-200
-                                    bg-gray-900 text-white hover:bg-gray-800 transition cursor-pointer`}
+                                    bg-[#264117] text-white hover:bg-yellow-700 transition cursor-pointer`}
                     >
                         Todas Viagens
                     </button>
                 </li>
-            
+
                 {veiculos.map((veiculo) => (
                     <li key={veiculo.id}>
                         <button
                             onClick={() => onFiltrar(veiculo.id!)}
                             className="w-full text-left block px-4 py-2 rounded-lg text-sm
-                                       bg-gray-100 text-gray-700 border border-gray-200
+                                       bg-gray-100 text-[#264117] border border-gray-200
                                        hover:bg-gray-200 transition cursor-pointer"
                         >
                             {veiculo.modelo}

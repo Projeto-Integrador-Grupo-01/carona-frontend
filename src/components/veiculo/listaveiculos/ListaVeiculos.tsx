@@ -55,12 +55,12 @@ function ListaVeiculos() {
 
             <div className="min-h-80 bg-white py-10">
                 <div className="max-w-5xl mx-auto flex justify-between items-center mb-10 px-4">
-                    <h1 className="text-3xl font-semibold text-[#1f2937]">
+                    <h1 className="text-3xl font-semibold text-[#264117]">
                         Gerenciar Veiculos
                     </h1>
                     <Link
                         to="/cadastrarveiculo"
-                        className="bg-gray-900 text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-gray-700 transition"
+                        className="bg-[#264117] text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-yellow-700 transition"
                     >
                         + Criar Veiculo
                     </Link>

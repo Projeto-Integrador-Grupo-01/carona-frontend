@@ -50,7 +50,7 @@ function ViagemDetalhe() {
             {viagem && (
                 <article className="max-w-3xl bg-white shadow-sm rounded-2xl p-8 mb-16
                         border border-gray-200">
-                    <h1 className="text-4xl font-extrabold text-slate-900 leading-tight mb-6">
+                    <h1 className="text-4xl font-extrabold text-yellow leading-tight mb-6">
                         Partida: {viagem.partida}
                     </h1>
                     <h1 className="text-4xl font-extrabold text-slate-900 leading-tight mb-6">

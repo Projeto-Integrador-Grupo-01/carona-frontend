@@ -30,7 +30,7 @@ function CardViagem({ viagem }: CardViagensProps) {
                         <h3 className="font-semibold text-lime-950">
                             {viagem.usuario?.nome}
                         </h3>
-                        <p className="text-sm text-slate-500">
+                        <p className="text-sm text-[#264117]">
                             {viagem.data.split("-").reverse().join("/")}
                         </p>
                     </div>
@@ -72,7 +72,7 @@ function CardViagem({ viagem }: CardViagensProps) {
                     Destino: {viagem.destino}
                 </h2>
 
-                <p className="text-slate-600 line-clamp-2 mb-6">
+                <p className="text-[#264117] line-clamp-2 mb-6">
                     {
                         Intl.NumberFormat('pt-BR', {
                             style: 'currency',

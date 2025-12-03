@@ -89,16 +89,16 @@ function FormVeiculo() {
     return (
         <div className="min-h-[80vh] bg-gray-50 flex items-center justify-center px-4">
             <div className="bg-white w-full max-w-3xl rounded-xl shadow-md border border-gray-200 p-8">
-                <h1 className="text-2xl font-bold text-gray-800 mb-1">
+                <h1 className="text-2xl font-bold text-[#264117] mb-1">
                     {id === undefined ? 'Criar novo veiculo' : 'Atualizar veiculo'}
                 </h1>
-                <p className="text-sm text-gray-500 mb-8">
+                <p className="text-sm text-[gray-500] mb-8">
                     Preencha os dados do veiculo abaixo
                 </p>
                 <form className="flex flex-col gap-6" onSubmit={gerarNovoVeiculo}>
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                           Modelo *
+                            Modelo *
                         </label>
                         <input
                             type="text"
@@ -111,7 +111,7 @@ function FormVeiculo() {
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                           Placa *
+                            Placa *
                         </label>
                         <input
                             type="text"
@@ -124,7 +124,7 @@ function FormVeiculo() {
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                           URL da Foto *
+                            URL da Foto *
                         </label>
                         <input
                             type="url"
@@ -138,7 +138,7 @@ function FormVeiculo() {
                     <div className="flex gap-3 mt-6">
                         <button
                             type="submit"
-                            className="bg-gray-900 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition flex items-center justify-center cursor-pointer"
+                            className="bg-[#264117] text-white px-5 py-2 rounded-md hover:bg-yellow-700 transition flex items-center justify-center cursor-pointer"
                         >
                             {isLoading ? (
                                 <ClipLoader color="#ffffff" size={20} />
@@ -149,7 +149,7 @@ function FormVeiculo() {
                         <button
                             type="button"
                             onClick={retornar}
-                            className="bg-gray-600 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer"
+                            className="bg-[#264117] text-white px-5 py-2 rounded-md hover:bg-yellow-700 transition cursor-pointer"
                         >
                             Cancelar
                         </button>

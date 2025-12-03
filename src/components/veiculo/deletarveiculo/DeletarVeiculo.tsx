@@ -63,14 +63,14 @@ function DeletarVeiculo() {
     }
 
     return (
-        <div className="max-w-xl mx-auto mt-20 bg-white text-gray-800 
+        <div className="max-w-xl mx-auto mt-20 bg-white text-[#264117] 
                 rounded-2xl shadow-2xl border border-gray-200 p-8">
-            <h1 className="text-2xl font-bold mb-4 text-gray-800">
+            <h1 className="text-2xl font-bold mb-4 text-[#264117]">
                 Excluir Veiculo
             </h1>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-[#264117] leading-relaxed mb-6">
                 Tem certeza de que deseja excluir o veiculo
-                <span className="text-gray-700 font-semibold"> "{veiculo.modelo}"</span>?
+                <span className="text-[#264117] font-semibold"> "{veiculo.modelo}"</span>?
                 Esta ação não poderá ser desfeita.
             </p>
             <div className="flex justify-end gap-3">
@@ -78,7 +78,7 @@ function DeletarVeiculo() {
                 <button
                     onClick={retornar}
                     className="px-5 py-2 rounded-lg border border-gray-700 
-                       hover:bg-gray-800 transition text-gray-700 hover:text-white cursor-pointer"
+                       hover:bg-yellow-700 transition text-[#264117] hover:text-white cursor-pointer"
                 >
                     Cancelar
                 </button>

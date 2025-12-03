@@ -240,7 +240,7 @@ function FormViagem() {
                         <button
                             type="submit"
                             disabled={carregandoVeiculo}
-                            className="mt-4 rounded-xl bg-gray-900 hover:bg-gray-700 cursor-pointer
+                            className="mt-4 rounded-xl bg-[#264117] hover:bg-gray-700 cursor-pointer
                      text-white font-semibold py-3 
                      flex justify-center items-center
                      disabled:bg-slate-300 transition-all"

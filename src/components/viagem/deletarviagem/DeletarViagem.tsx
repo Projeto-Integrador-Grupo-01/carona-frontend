@@ -74,15 +74,15 @@ function DeletarViagem() {
     }
 
     return (
-        <div className="max-w-xl mx-auto mt-20 bg-white text-gray-800 
+            <div className="max-w-xl mx-auto mt-20 bg-white text-[#264117] 
                 rounded-2xl shadow-2xl border border-gray-200 p-8">
-            <h1 className="text-2xl font-bold mb-4 text-gray-800">
+            <h1 className="text-2xl font-bold mb-4 text-[#264117]">
                 Excluir Viagem
             </h1>
-            <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-[#264117] leading-relaxed mb-6">
                 Tem certeza de que deseja excluir a viagem saindo de 
-                <span className="text-gray-700 font-semibold"> "{viagem.partida}"</span> para 
-                <span className="text-gray-700 font-semibold"> "{viagem.destino}"</span>?
+                <span className="text-[#264117] font-semibold"> "{viagem.partida}"</span> para 
+                    <span className="text-[#264117] font-semibold"> "{viagem.destino}"</span>?
                 Esta ação não poderá ser desfeita.
             </p>
             <div className="flex justify-end gap-3">

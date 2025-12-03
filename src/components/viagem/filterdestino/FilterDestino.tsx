@@ -53,7 +53,7 @@ function FilterDestino({ onFiltrar }: FilterViagensProps) {
                     <button
                         onClick={() => onFiltrar(null)}
                         className="w-full text-left block px-4 py-2 rounded-lg text-sm border border-gray-200
-                                   bg-gray-900 text-white hover:bg-gray-800 transition cursor-pointer"
+                                   bg-[#264117] text-white hover:bg-yellow-700 transition cursor-pointer"
                     >
                         Todos Destinos
                     </button>
@@ -64,7 +64,7 @@ function FilterDestino({ onFiltrar }: FilterViagensProps) {
                         <button
                             onClick={() => onFiltrar(destino)}
                             className="w-full text-left block px-4 py-2 rounded-lg text-sm
-                                       bg-gray-100 text-gray-700 border border-gray-200
+                                       bg-gray-100 text-[#264117] border border-gray-200
                                        hover:bg-gray-200 transition cursor-pointer"
                         >
                             {destino}
