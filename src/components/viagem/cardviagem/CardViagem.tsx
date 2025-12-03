@@ -27,7 +27,7 @@ function CardViagem({ viagem }: CardViagensProps) {
                         className="h-12 w-12 rounded-full object-cover"
                     />
                     <div>
-                        <h3 className="font-semibold text-slate-800">
+                        <h3 className="font-semibold text-lime-950">
                             {viagem.usuario?.nome}
                         </h3>
                         <p className="text-sm text-slate-500">
@@ -41,7 +41,7 @@ function CardViagem({ viagem }: CardViagensProps) {
                         <Link
                             to={`/editarviagem/${viagem.id}`}
                             className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm 
-                                       hover:bg-gray-100 transition flex items-center justify-center text-slate-800"
+                                       hover:bg-gray-100 transition flex items-center justify-center text-lime-950"
                             title="Editar Viagem"
                         >
                             <PencilSimpleIcon />
@@ -50,7 +50,7 @@ function CardViagem({ viagem }: CardViagensProps) {
                         <Link
                             to={`/deletarviagem/${viagem.id}`}
                             className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm 
-                                       hover:bg-gray-100 transition flex items-center justify-center text-slate-800"
+                                       hover:bg-gray-100 transition flex items-center justify-center text-lime-950"
                             title="Excluir Viagem"
                         >
                             <TrashSimpleIcon />
@@ -65,10 +65,10 @@ function CardViagem({ viagem }: CardViagensProps) {
                     {viagem.veiculo?.modelo}
                 </span>
 
-                <h2 className="text-xl font-bold text-slate-800">
+                <h2 className="text-xl font-bold text-lime-950">
                     Partida: {viagem.partida}
                 </h2>
-                <h2 className="text-xl font-bold text-slate-800">
+                <h2 className="text-xl font-bold text-lime-950">
                     Destino: {viagem.destino}
                 </h2>
 

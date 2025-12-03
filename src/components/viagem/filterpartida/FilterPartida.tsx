@@ -41,7 +41,7 @@ function FilterPartida({ onFiltrar }: FilterViagensProps) {
     return (
         <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm
                         hover:shadow-xl transition-all duration-300">
-            <h3 className="font-semibold text-lg mb-4 text-blue-950">Filtrar por Partida</h3>
+            <h3 className="font-semibold text-lg mb-4 text-lime-950">Filtrar por Partida</h3>
 
             {isLoading && (
                 <div className="flex justify-center py-4">
@@ -54,7 +54,7 @@ function FilterPartida({ onFiltrar }: FilterViagensProps) {
                     <button
                         onClick={() => onFiltrar(null)}
                         className="w-full text-left block px-4 py-2 rounded-lg text-sm border border-gray-200
-                                   bg-gray-900 text-white hover:bg-gray-800 transition cursor-pointer"
+                                   bg-lime-950 text-white hover:bg-amber-900 transition cursor-pointer"
                     >
                         Todas Partidas
                     </button>
@@ -65,7 +65,7 @@ function FilterPartida({ onFiltrar }: FilterViagensProps) {
                         <button
                             onClick={() => onFiltrar(partida)}
                             className="w-full text-left block px-4 py-2 rounded-lg text-sm
-                                       bg-gray-100 text-gray-700 border border-gray-200
+                                       bg-gray-100 text-lime-900 border border-gray-200
                                        hover:bg-gray-200 transition cursor-pointer"
                         >
                             {partida}

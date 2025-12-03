@@ -40,7 +40,7 @@ function FilterDestino({ onFiltrar }: FilterViagensProps) {
     return (
         <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-sm
                         hover:shadow-xl transition-all duration-300">
-            <h3 className="font-semibold text-lg mb-4 text-blue-950">Filtrar por Destino</h3>
+            <h3 className="font-semibold text-lg mb-4 text-lime-950">Filtrar por Destino</h3>
 
             {isLoading && (
                 <div className="flex justify-center py-4">
