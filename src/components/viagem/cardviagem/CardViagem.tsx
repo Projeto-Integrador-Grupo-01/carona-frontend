@@ -66,11 +66,19 @@ function CardViagem({ viagem }: CardViagensProps) {
                 </span>
 
                 <h2 className="text-xl font-bold text-slate-800">
-                    {viagem.destino}
+                    Partida: {viagem.partida}
+                </h2>
+                <h2 className="text-xl font-bold text-slate-800">
+                    Destino: {viagem.destino}
                 </h2>
 
                 <p className="text-slate-600 line-clamp-2 mb-6">
-                    {viagem.partida}
+                    {
+                        Intl.NumberFormat('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                        }).format(viagem.preco)
+                    }
                 </p>
 
                 <Link
