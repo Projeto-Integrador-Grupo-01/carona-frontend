@@ -90,7 +90,7 @@ function Navbar() {
                         <div className="flex flex-col">
                             <img
                                 className="h-18"
-                                src="https://imgur.com/p62Wicv.png"
+                                src="https://ik.imagekit.io/querenasl/logo.png?updatedAt=1764872432454"
                                 alt="logo"
                             />
                         </div>
@@ -187,7 +187,7 @@ function Navbar() {
                     >
                         <img
                             className="h-18"
-                            src="https://imgur.com/p62Wicv.png"
+                            src="https://ik.imagekit.io/querenasl/logo.png?updatedAt=1764872432454"
                             alt="logo"
                         />
                     </Link>
