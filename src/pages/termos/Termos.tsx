@@ -65,7 +65,7 @@ function Termos() {
         </ul>
 
         <h3 className="text-xl font-semibold mt-2">5.2 Uso Proibido</h3>
-        <ul className="list-disc list-inside space-y-1 text-red-600">
+        <ul className="list-disc list-inside space-y-1">
           <li>Fornecer informações falsas ou enganosas</li>
           <li>Utilizar a plataforma para fins ilícitos</li>
           <li>Assediar, intimidar ou prejudicar outros usuários</li>
