@@ -35,14 +35,14 @@ function Perfil() {
                         </div>
                     </div>
                     <div className="pt-20 pb-8 text-center">
-                        <h1 className="text-2xl font-semibold text-gray-800">
+                        <h1 className="text-2xl font-semibold text-[#264117]">
                             {usuario.nome}
                         </h1>
-                        <p className="text-gray-500 mt-1">
+                        <p className="text-[#264117] mt-1">
                             {usuario.email}
                         </p>
                         <Link to={`/atualizarperfil`} className="inline-block mt-6">
-                            <button className="px-6 py-2.5 text-white text-sm font-medium rounded-md bg-gray-800 hover:bg-gray-700 transition cursor-pointer">
+                            <button className="px-6 py-2.5 text-white text-sm font-medium rounded-md bg-[#264117] hover:bg-yellow-700 transition cursor-pointer">
                                 Editar Perfil
                             </button>
                         </Link>

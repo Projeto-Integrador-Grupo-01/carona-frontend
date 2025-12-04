@@ -111,10 +111,10 @@ function AtualizarPerfil() {
     return (
         <div className="min-h-screen bg-gray-50 flex justify-center items-start py-12 px-4">
             <div className="w-full max-w-4xl">
-                <h1 className="text-3xl font-bold text-gray-800 mb-2">Editar Perfil</h1>
+                <h1 className="text-3xl font-bold text-[#264117] mb-2">Editar Perfil</h1>
                 <p className="text-gray-500 mb-8">Atualize suas informações do perfil</p>
                 <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-8">
-                    <h2 className="text-lg font-semibold text-gray-800 mb-6">Dados Pessoais</h2>
+                    <h2 className="text-lg font-semibold text-[#264117] mb-6">Dados Pessoais</h2>
 
                     <div className="flex items-center justify-center gap-6 mb-8">
                         <div className="flex flex-col items-center justify-center">
@@ -122,14 +122,14 @@ function AtualizarPerfil() {
                                 <img src={user.foto} alt={user.nome} className="w-40 h-40 object-cover rounded-full border-2 border-white shadow-2xl" />
                                 <div className="absolute bottom-4 right-4 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
                             </div>
-                            <h2 className="text-gray-700 text-2xl font-bold mt-6 text-center">{user.nome}</h2>
-                            <p className="text-gray-400 text-base mt-2">{user.email}</p>
+                            <h2 className="text-[#264117] text-2xl font-bold mt-6 text-center">{user.nome}</h2>
+                            <p className="text-[#264117] text-base mt-2">{user.email}</p>
                         </div>
                     </div>
 
                     <form onSubmit={atualizarUsuario} className="space-y-6">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block text-sm font-medium text-[#264117] mb-1">
                                 Nome completo
                             </label>
                             <input
@@ -141,7 +141,7 @@ function AtualizarPerfil() {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block text-sm font-medium text-[#264117] mb-1">
                                 E-mail
                             </label>
                             <input
@@ -149,12 +149,12 @@ function AtualizarPerfil() {
                                 name="email"
                                 value={user.email}
                                 disabled
-                                className="w-full px-4 py-3 border border-gray-200 rounded-md bg-gray-100 text-gray-500 cursor-not-allowed"
+                                className="w-full px-4 py-3 border border-gray-200 rounded-md bg-gray-100 text-[#264117] cursor-not-allowed"
                             />
                             <p className="text-xs text-gray-400 mt-1">E-mail não pode ser alterado</p>
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block text-sm font-medium text-[#264117] mb-1">
                                 URL da foto de perfil
                             </label>
                             <input
@@ -166,7 +166,7 @@ function AtualizarPerfil() {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block text-sm font-medium text-[#264117] mb-1">
                                 Nova Senha
                             </label>
                             <input
@@ -178,7 +178,7 @@ function AtualizarPerfil() {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block text-sm font-medium text-[#264117] mb-1">
                                 Confirmar Senha
                             </label>
                             <input
@@ -192,7 +192,7 @@ function AtualizarPerfil() {
                             <button
                                 type="button"
                                 onClick={retornar}
-                                className="px-6 py-3 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-100 transition cursor-pointer"
+                                className="px-6 py-3 rounded-md border border-gray-300 text-[#264117] hover:bg-gray-100 transition cursor-pointer"
                             >
                                 Cancelar
                             </button>
@@ -200,7 +200,7 @@ function AtualizarPerfil() {
                             <button
                                 type="submit"
                                 disabled={isLoading}
-                                className="px-6 py-3 rounded-md text-white font-medium bg-gray-800 hover:bg-gray-700 transition flex items-center gap-2 cursor-pointer"
+                                className="px-6 py-3 rounded-md text-white font-medium bg-[#264117] hover:bg-yellow-700 transition flex items-center gap-2 cursor-pointer"
                             >
                                 {isLoading ? <ClipLoader size={20} color="#fff" /> : 'Atualizar Perfil'}
                             </button>

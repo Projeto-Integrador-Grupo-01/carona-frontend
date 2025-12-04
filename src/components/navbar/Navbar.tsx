@@ -97,7 +97,7 @@ function Navbar() {
                     </Link>
 
                     {/* Links desktop */}
-                    <div className="hidden md:flex gap-8 text-sm">
+                    <div className="hidden md:flex gap-8 text-xl">
                         <Link
                             to="/login"
                             className={`hover:text-yellow-700 transition ${isActive(

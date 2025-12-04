@@ -29,17 +29,17 @@ const Footer = () => {
 
         {/* LINKS */}
         <div className="flex flex-wrap justify-center gap-8 text-sm font-medium opacity-90">
-          <a
-            href="#terms"
+          <a 
+            href="Termos_De_Uso.md" target="_blank"
             className="transition-all hover:text-[#d6f2d7] hover:tracking-wide duration-200"
           >
-            Terms of Use
+            Termos de Uso
           </a>
           <a
-            href="#contact"
+            href="https://bio.site/techsisters" target="_blank"
             className="transition-all hover:text-[#d6f2d7] hover:tracking-wide duration-200"
           >
-            Contact
+            Contato
           </a>
 
           <a
@@ -65,7 +65,7 @@ const Footer = () => {
 
         {/* COPY FINAL */}
         <div className="text-center text-xs opacity-90 mt-3">
-          Desenvolvido por{" "}
+          Desenvolvido por{" "} 
           <a
             href={TECH_SISTERS_SITE}
             target="_blank"
@@ -73,7 +73,11 @@ const Footer = () => {
             className="font-semibold underline underline-offset-4 decoration-white/60 hover:text-[#d6f2d7] transition-colors duration-200"
           >
             Tech Sisters
-          </a>
+          </a><br/>
+          
+          <b className="block mt-1">
+        © {new Date().getFullYear()} GoTogether. Todos os direitos reservados.
+          </b>
         </div>
 
       </motion.div>

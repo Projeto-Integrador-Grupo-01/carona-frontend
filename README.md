@@ -30,14 +30,16 @@ O **GoTogether** é uma plataforma de **Corporate Ridesharing** (carona corporat
 
 A proposta é oferecer uma alternativa inteligente e colaborativa para o deslocamento diário, onde funcionários podem compartilhar caronas de forma segura, econômica e ambientalmente responsável.
 
-### Principais Características
+---
 
- ✅ Interface moderna e responsiva
- ✅ Tipagem forte com TypeScript
- ✅ Componentização reutilizável
- ✅ Integração completa com API REST
- ✅ Autenticação e autorização seguras
- ✅ Design system consistente com Tailwind CSS
+## Principais Características
+
+ ✅ Interface moderna e responsiva<br>
+ ✅ Tipagem forte com TypeScript<br>
+ ✅ Componentização reutilizável<br>
+ ✅ Integração completa com API REST<br>
+ ✅ Autenticação e autorização seguras<br>
+ ✅ Design system consistente com Tailwind CSS<br>
 
 ------
 
@@ -114,6 +116,8 @@ gotogether_frontend/
 ├── tsconfig.app.json        # Config TS para aplicação
 ├── tsconfig.node.json       # Config TS para Node
 ├── vite.config.ts           # Configuração do Vite
+├── tailwind.config.js       # Config TS para Node
+├── Termos_De_Uso.md         # Termos de Uso
 └── README.md                # Documentação
 ```
 
@@ -273,12 +277,15 @@ interface Viagem {
 
 ### Paleta de Cores
 
+
+| Cor                | Código    | Significado                         |
+| ------------------ | --------- | ----------------------------------- |
+| 🟢 Natureza         | `#4C7625` | Natureza e crescimento              |
+| 🟠 Energia          | `#B04A1E` | Energia e movimento                 |
+| 🌿 Sustentabilidade | `#2E4C16` | Sustentabilidade e responsabilidade |
+| 🟧 Dinamismo        | `#DA792D` | Dinamismo e inovação                |
+
 ```css
-/* Cores Principais */
---natureza: #4C7625;           /* Natureza e crescimento */
---energia: #B04A1E;            /* Energia e movimento */
---sustentabilidade: #2E4C16;   /* Sustentabilidade e responsabilidade */
---dinamismo: #DA792D;          /* Dinamismo e inovação */
 
 /* Cores de Apoio */
 --branco: #ffffff;
@@ -287,12 +294,7 @@ interface Viagem {
 --cinza-escuro: #374151;
 ```
 
-| Cor                | Código    | Significado                         |
-| ------------------ | --------- | ----------------------------------- |
-| 🟢 Natureza         | `#4C7625` | Natureza e crescimento              |
-| 🟠 Energia          | `#B04A1E` | Energia e movimento                 |
-| 🌿 Sustentabilidade | `#2E4C16` | Sustentabilidade e responsabilidade |
-| 🟧 Dinamismo        | `#DA792D` | Dinamismo e inovação                |
+---
 
 ### Tipografia
 
