@@ -1,4 +1,4 @@
-import { Flag, Leaf, PersonArmsSpreadIcon, PiggyBank, Shield, Users } from "@phosphor-icons/react";
+import { Flag, Heart, Leaf, PersonArmsSpreadIcon, PiggyBank, Shield, Users } from "@phosphor-icons/react";
 
 
 export default function BenefitsSection() {
@@ -7,37 +7,45 @@ export default function BenefitsSection() {
             icon: PiggyBank,
             title: 'Economia',
             description: 'Redução de custos com os benefícios de mobilidade',
-            color: 'text-teal-600',
-            bgColor: 'bg-teal-100',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
         },
         {
             icon: PersonArmsSpreadIcon,
             title: 'Acessibilidade',
-            description: 'Garantir a acessibilidade para os passageiros é nossa prioridade',
-            color: 'text-teal-600',
-            bgColor: 'bg-teal-100',
+            description: 'Transporte corporativo que alcança todos, garantindo opções inclusivas e práticas para diferentes perfis de colaboradores',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
         },
         {
             icon: Users,
             title: 'Conectividade',
             description: 'Conexão de colaboradores com rotinas compatíveis promovendo a integração',
-            color: 'text-teal-600',
-            bgColor: 'bg-teal-100',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
         },
         {
             icon: Flag,
             title: 'Inovação',
-            description: 'Apps e estudos de gestão de mobilidade corporativa que se adaptam às rotinas dos seus colaboradores',
-            color: 'text-teal-600',
-            bgColor: 'bg-teal-100',
+            description: 'Sistema de gestão de mobilidade corporativa que se adapta às rotinas dos seus colaboradores',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
         },
         {
             icon: Leaf,
             title: 'Sustentabilidade',
             description: 'Mobilidade mais eficiente com menos automóveis na rua',
-            color: 'text-teal-600',
-            bgColor: 'bg-teal-100',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
         },
+        {
+            icon: Heart,
+            title: 'Bem-Estar',
+            description: 'Menos tempo no trânsito significa mais qualidade de vida e satisfação para sua equipe',
+            color: 'text-green-900',
+            bgColor: 'bg-green-100',
+        },
+
     ];
 
     return (
