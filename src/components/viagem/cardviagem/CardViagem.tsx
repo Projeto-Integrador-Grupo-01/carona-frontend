@@ -16,79 +16,91 @@ function CardViagem({ viagem }: CardViagensProps) {
 
     return (
         <div className="bg-white rounded-2xl border border-gray-200 shadow-sm 
-             hover:shadow-xl hover:-translate-y-1 transition-all duration-300 
-             overflow-hidden flex flex-col justify-between"
-        >
-            <div className="flex items-center justify-between px-6 py-4">
-                <div className="flex items-center gap-4">
-                    <img
-                        src={viagem.usuario?.foto}
-                        alt={viagem.usuario?.nome}
-                        className="h-12 w-12 rounded-full object-cover"
-                    />
-                    <div>
-                        <h3 className="font-semibold text-lime-950">
-                            {viagem.usuario?.nome}
-                        </h3>
-                        <p className="text-sm text-[#264117]">
-                            {viagem.data.split("-").reverse().join("/")}
-                        </p>
-                    </div>
-                </div>
+    hover:shadow-lg hover:-translate-y-1 transition-all duration-300 
+    overflow-hidden flex flex-col justify-between">
 
-                {isDonoDaViagem && (
-                    <div className="flex gap-2">
-                        <Link
-                            to={`/editarviagem/${viagem.id}`}
-                            className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm 
-                                       hover:bg-gray-100 transition flex items-center justify-center text-lime-950"
-                            title="Editar Viagem"
-                        >
-                            <PencilSimpleIcon />
-                        </Link>
+    {/* TOPO — Motorista + Data */}
+    <div className="flex items-center justify-between px-6 py-5 bg-linear-to-r from-lime-100 to-lime-50">
+        <div className="flex items-center gap-4">
+            <img
+                src={viagem.usuario?.foto}
+                alt={viagem.usuario?.nome}
+                className="h-12 w-12 rounded-full object-cover ring-2 ring-lime-700"
+            />
 
-                        <Link
-                            to={`/deletarviagem/${viagem.id}`}
-                            className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm 
-                                       hover:bg-gray-100 transition flex items-center justify-center text-lime-950"
-                            title="Excluir Viagem"
-                        >
-                            <TrashSimpleIcon />
-                        </Link>
-                    </div>
-                )}
-            </div>
+            <div>
+                <h3 className="font-semibold text-lime-950 text-lg">
+                    {viagem.usuario?.nome}
+                </h3>
 
-            <div className="p-6 space-y-3">
-                <span className=" bg-yellow-100 
-                            text-orange-700 text-sm font-medium px-3 py-1 rounded-full inline-block">
-                    {viagem.veiculo?.modelo}
-                </span>
-
-                <h2 className="text-xl font-bold text-lime-950">
-                    Partida: {viagem.partida}
-                </h2>
-                <h2 className="text-xl font-bold text-lime-950">
-                    Destino: {viagem.destino}
-                </h2>
-
-                <p className="text-[#264117] line-clamp-2 mb-6">
-                    {
-                        Intl.NumberFormat('pt-BR', {
-                            style: 'currency',
-                            currency: 'BRL',
-                        }).format(viagem.preco)
-                    }
+                <p className="text-sm text-lime-800 flex items-center gap-1">
+                    <span className="inline-block w-2 h-2 bg-lime-700 rounded-full"></span>
+                    {new Intl.DateTimeFormat("pt-BR", {
+                        dateStyle: "short"
+                    }).format(new Date(viagem.data))}
                 </p>
-
-                <Link
-                    to={`/viagem/${viagem.id}`}
-                    className="bg-lime-950 text-white hover:bg-amber-800 transition cursor-pointer px-4 py-2 rounded-lg"
-                >
-                    Mais detalhes →
-                </Link>
             </div>
         </div>
+
+        {isDonoDaViagem && (
+            <div className="flex gap-2">
+                <Link
+                    to={`/editarviagem/${viagem.id}`}
+                    className="p-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition"
+                    title="Editar Viagem"
+                >
+                    <PencilSimpleIcon />
+                </Link>
+
+                <Link
+                    to={`/deletarviagem/${viagem.id}`}
+                    className="p-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition"
+                    title="Excluir Viagem"
+                >
+                    <TrashSimpleIcon />
+                </Link>
+            </div>
+        )}
+    </div>
+
+    {/* CORPO */}
+    <div className="p-6 space-y-5">
+
+        {/* ORIGEM → DESTINO */}
+        <div className="space-y-1">
+            <div className="flex items-center text-lime-950 font-bold text-xl gap-2">
+                <span className="w-2 h-2 bg-lime-700 rounded-full"></span>
+                {viagem.partida}
+            </div>
+
+            <div className="border-l-2 border-lime-700 h-4 ml-[7px]"></div>
+
+            <div className="flex items-center text-lime-950 font-bold text-xl gap-2">
+                <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
+                {viagem.destino}
+            </div>
+        </div>
+
+        {/* PREÇO */}
+        <p className="text-2xl font-bold text-amber-700">
+            {Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+            }).format(viagem.preco)}
+        </p>
+
+        {/* BOTÃO */}
+        <Link
+            to={`/viagem/${viagem.id}`}
+            className="w-full text-center bg-lime-900 text-white 
+            hover:bg-amber-700 transition cursor-pointer px-4 py-3 
+            rounded-xl font-semibold shadow"
+        >
+            Ver detalhes
+        </Link>
+    </div>
+</div>
+
     )
 }
 

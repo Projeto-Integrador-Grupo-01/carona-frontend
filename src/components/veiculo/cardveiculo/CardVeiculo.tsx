@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import type Veiculo from "../../../models/Veiculo"
-import { PencilSimpleIcon, TrashSimpleIcon } from "@phosphor-icons/react"
+import { PencilSimpleIcon, SteeringWheelIcon, TrashSimpleIcon } from "@phosphor-icons/react"
 
 interface CardVeiculoProps {
   veiculo: Veiculo
@@ -11,9 +11,23 @@ function CardVeiculo({ veiculo }: CardVeiculoProps) {
   return (
     <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 flex justify-between items-center w-full max-w-4xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <div>
-        <h3 className="text-lg font-semibold text-[#264117] mb-1">
-          {veiculo.modelo}
-        </h3>
+        <div className="bg-white  p-5 mb-10 flex justify-between items-center gap-6">
+                        <img
+                            src={veiculo.foto}
+                            alt="Foto do carro"
+                            className="h-28 w-40 object-cover rounded-xl shadow"
+                        />
+
+                        <div>
+                            <p className="text-lg font-semibold text-lime-900 flex items-center gap-2">
+                                <SteeringWheelIcon size={22} />
+                                {veiculo.modelo}
+                            </p>
+                            <p className="text-sm text-gray-600">
+                                Placa: {veiculo.placa}
+                            </p>
+                        </div>
+                    </div>
       </div>
       <div className="flex gap-2">
         <Link

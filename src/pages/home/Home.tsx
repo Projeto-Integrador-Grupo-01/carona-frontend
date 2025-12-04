@@ -22,10 +22,10 @@ function Home() {
                 <div className="relative z-10 text-center flex flex-col gap-5 items-center px-4">
 
                     <h2 className="text-5xl md:text-6xl font-serif text-white">
-                        GoTogether
+                        Vamos Juntos?
                     </h2>
                     <p className="text-xl text-slate-200 max-w-xl">
-                        Compartilhando caminhos
+                        Compartilhe caronas e faça parte da mudança
                     </p>
                     <div className="mt-4">
                         <ModalViagem />

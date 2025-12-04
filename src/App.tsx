@@ -17,6 +17,7 @@ import DeletarVeiculo from "./components/veiculo/deletarveiculo/DeletarVeiculo"
 import ListaViagens from "./components/viagem/listaviagens/ListaViagens"
 import FormViagem from "./components/viagem/formviagem/FormViagem"
 import DeletarViagem from "./components/viagem/deletarviagem/DeletarViagem"
+import "leaflet/dist/leaflet.css";
 
 function App() {
 
