@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
         name: "Queren Alves",
         linkedin: "https://www.linkedin.com/in/querenhalves/",
         photo: querenImg,
-        description: "------",
+        description: "Aqui, mulheres transformam conhecimento em ação, inovação em resultados e colaboração em futuro.",
     },
 ];
 

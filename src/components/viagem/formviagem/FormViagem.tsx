@@ -157,7 +157,7 @@ function FormViagem() {
                         <div className="flex flex-col gap-1">
                             <label className="font-semibold">Partida</label>
                             <input
-                                placeholder="Digite a partida"
+                                placeholder="Ex: Rio Claro, SP"
                                 name="partida"
                                 required
                                 value={viagem.partida}
@@ -169,7 +169,7 @@ function FormViagem() {
                             <label className="font-semibold">Destino</label>
                             <input
                                 type="text"
-                                placeholder="Digite o destino"
+                                placeholder="Ex: Araras, SP"
                                 name="destino"
                                 required
                                 value={viagem.destino}
@@ -186,7 +186,7 @@ function FormViagem() {
                                 onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                                 type="number"
                                 step=".01"
-                                placeholder="Adicione aqui o preço do Produto"
+                                placeholder="Adicione aqui o preço da viagem"
                                 name="preco"
                                 id="preco"
                                 required
@@ -210,7 +210,7 @@ function FormViagem() {
                             <label className="font-semibold">Duração</label>
                             <input
                                 type="number"
-                                placeholder="Digite a duração da viagem"
+                                placeholder="Duração em horas (ex: 0,3)"
                                 name="tempo"
                                 required
                                 value={viagem.tempo}

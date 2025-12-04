@@ -260,7 +260,7 @@ function ViagemDetalhe() {
 
                     {/* BOTÃO DE RESERVA */}
                     <button
-                        className="mt-8 w-full flex items-center justify-center gap-3 bg-amber-600 text-white py-4 rounded-2xl font-bold text-lg shadow-md hover:bg-amber-700 transition mb-4"
+                        className="cursor-pointer mt-8 w-full flex items-center justify-center gap-3 bg-amber-600 text-white py-4 rounded-2xl font-bold text-lg shadow-md hover:bg-amber-700 transition mb-4"
                     >
                         Reservar Assento
                     </button>

@@ -233,7 +233,7 @@ function Navbar() {
                         </Link>
                         <button
                             onClick={logout}
-                            className="hover:text-yellow-700 transition px-3 py-2"
+                            className="hover:text-yellow-700 transition px-3 py-2 cursor-pointer"
                             title="Sair"
                         >
                             <SignOutIcon size={20} />

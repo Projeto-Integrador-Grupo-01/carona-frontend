@@ -18,6 +18,7 @@ import ListaViagens from "./components/viagem/listaviagens/ListaViagens"
 import FormViagem from "./components/viagem/formviagem/FormViagem"
 import DeletarViagem from "./components/viagem/deletarviagem/DeletarViagem"
 import "leaflet/dist/leaflet.css";
+import Termos from "./pages/termos/Termos"
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
               <Route path="/perfil" element={<Perfil />} />
               <Route path="/atualizarperfil" element={<AtualizarPerfil />} />
               <Route path="/viagem/:id" element={<ViagemDetalhe />} />
+              <Route path="/termos" element={<Termos />} />
             </Routes>
           </div>
           <Footer />

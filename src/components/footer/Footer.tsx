@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const GITHUB_REPO_URL = "https://github.com/Projeto-Integrador-Grupo-01/carona-frontend";
 const TECH_SISTERS_SITE = "https://projeto-integrador-grupo-01.github.io/techsisters/"; // ajuste
@@ -29,12 +30,11 @@ const Footer = () => {
 
         {/* LINKS */}
         <div className="flex flex-wrap justify-center gap-8 text-sm font-medium opacity-90">
-          <a 
-            href="Termos_De_Uso.md" target="_blank"
-            className="transition-all hover:text-[#d6f2d7] hover:tracking-wide duration-200"
+          <Link to={"/termos"}
+            className="transition-all hover:text-[#d6f2d7] hover:tracking-wide duration-200" target="_blanck"
           >
             Termos de Uso
-          </a>
+          </Link>
           <a
             href="https://bio.site/techsisters" target="_blank"
             className="transition-all hover:text-[#d6f2d7] hover:tracking-wide duration-200"
@@ -86,16 +86,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
 
 // import { useContext, type ReactNode } from "react"
 // import { AuthContext } from "../../contexts/AuthContext"
