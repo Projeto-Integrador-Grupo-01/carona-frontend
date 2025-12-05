@@ -166,15 +166,15 @@ function ViagemDetalhe() {
                     </div>
 
                     {/* CARRO */}
-                    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 mb-10 flex items-center gap-6">
+                    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 mb-10 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
                         <img
                             src={viagem.veiculo?.foto}
                             alt="Foto do carro"
-                            className="h-28 w-40 object-cover rounded-xl shadow"
+                            className="h-32 w-full md:w-40 md:h-28 object-cover rounded-xl shadow"
                         />
 
-                        <div>
-                            <p className="text-lg font-semibold text-lime-900 flex items-center gap-2">
+                        <div className="text-center md:text-left md:mt-1">
+                            <p className="text-lg font-semibold text-lime-900 flex justify-center md:justify-start items-center gap-2">
                                 <SteeringWheelIcon size={22} />
                                 {viagem.veiculo?.modelo}
                             </p>
